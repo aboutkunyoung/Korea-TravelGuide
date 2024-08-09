@@ -1,0 +1,674 @@
+<!-- /*
+* Template Name: Tour
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>EnjoyTRIP</title>
+
+    <script src="./assets/js/key.js"></script>
+  </head>
+
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- 네비게이션 바 -->
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0">EnjoyTRIP</a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="services.html">헤헤헹</a></li>
+            <li class="has-children">
+              <a href="#">여행 떠나기</a>
+              <ul class="dropdown">
+                <li><a href="elements.html">지역별 여행지 검색</a></li>
+                <li><a href="#">여행 계획 세우기</a></li>
+                <li class="has-children">
+                  <a href="#">여행 정보 공유하기</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sub Menu One</a></li>
+                    <li><a href="#">Sub Menu Two</a></li>
+                    <li><a href="#">Sub Menu Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- Button trigger modal -->
+            <li>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#login" id="loginButton">
+                로그인
+              </a>
+            </li>
+            <li>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#signin" id="signinButton">
+                회원가입
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 로그인 모달 -->
+    <div
+      class="modal fade"
+      id="login"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginLabel">로그인</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="loginForm">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">아이디</label>
+                <input type="text" class="form-control" id="loginId" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="loginPassword" />
+              </div>
+              <div class="right-container">
+                <button type="submit" class="btn btn-primary">로그인</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 회원가입 모달 -->
+    <div
+      class="modal fade"
+      id="signin"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="signinLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signinLabel">회원가입</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="signinForm">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="signinName" class="form-label">이름</label>
+                <input type="text" class="form-control" id="signinName" />
+              </div>
+              <div class="mb-3">
+                <label for="signinId" class="form-label">아이디</label>
+                <input type="text" class="form-control" id="signinId" />
+              </div>
+              <div class="mb-3">
+                <label for="signinPassword" class="form-label">비밀번호</label>
+                <input type="password" class="form-control" id="signinPassword" />
+              </div>
+              <div class="mb-3">
+                <label for="signinPasswordCheck" class="form-label">비밀번호 확인</label>
+                <input type="password" class="form-control" id="signinPasswordCheck" />
+              </div>
+              <div class="mb-3">
+                <label for="signinEmail" class="form-label">이메일</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="signinEmail"
+                  placeholder="enjoyTrip@example.com"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="right-container">
+                <button type="button" class="btn btn-secondary mr-2" data-bs-dismiss="modal">
+                  취소
+                </button>
+                <button type="submit" class="btn btn-primary">회원가입</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="intro-wrap">
+              <h1 class="mb-5">
+                <span class="d-block">Let's Enjoy Your</span> Trip In
+                <span class="typed-words"></span>
+              </h1>
+
+              <div class="row">
+                <div class="col-12">
+                  <form class="form">
+                    <div class="row mb-2">
+                      <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <select
+                          name="destination"
+                          id="destination"
+                          class="form-control custom-select"
+                        >
+                          <option value="">Destination</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <select name="category" id="category" class="form-control custom-select">
+                          <option value="">관광지 유형</option>
+                          <option value="">관광지</option>
+                          <option value="">문화시설</option>
+                          <option value="">축제공연행사</option>
+                          <option value="">여행코스</option>
+                          <option value="">레포츠</option>
+                          <option value="">숙박</option>
+                          <option value="">쇼핑</option>
+                          <option value="">음식점</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <input type="text" class="form-control" placeholder="검색어" />
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                        <input type="submit" class="btn btn-primary btn-block" value="검색" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="slides">
+              <img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active" />
+              <img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid" />
+              <img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid" />
+              <img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid" />
+              <img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 class="section-title text-center mb-3">Our Services</h2>
+            <p>
+              Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+              at the coast of the Semantics, a large language ocean.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-lg-4 order-lg-1">
+            <div class="h-100">
+              <div class="frame h-100">
+                <div
+                  class="feature-img-bg h-100"
+                  style="background-image: url('images/hero-slider-1.jpg')"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-house display-4 text-primary"></span>
+                <h3>Beautiful Condo</h3>
+                <p class="mb-0">
+                  Even the all-powerful Pointing has no control about the blind texts.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-1">
+              <div class="align-self-center">
+                <span class="flaticon-restaurant display-4 text-primary"></span>
+                <h3>Restaurants & Cafe</h3>
+                <p class="mb-0">
+                  Even the all-powerful Pointing has no control about the blind texts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-mail display-4 text-primary"></span>
+                <h3>Easy to Connect</h3>
+                <p class="mb-0">
+                  Even the all-powerful Pointing has no control about the blind texts.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-1 d-md-flex">
+              <div class="align-self-center">
+                <span class="flaticon-phone-call display-4 text-primary"></span>
+                <h3>24/7 Support</h3>
+                <p class="mb-0">
+                  Even the all-powerful Pointing has no control about the blind texts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section count-numbers py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="9313">0</span>
+              </div>
+              <span class="caption">No. of Travels</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="8492">0</span>
+              </div>
+              <span class="caption">No. of Clients</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="100">0</span>
+              </div>
+              <span class="caption">No. of Employees</span>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="counter-wrap">
+              <div class="counter">
+                <span class="" data-number="120">0</span>
+              </div>
+              <span class="caption">No. of Countries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="untree_co-section">
+      <div class="container container-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-title text-center">Popular Destination</h2>
+        </div>
+      </div>
+      <form class="d-flex m-5" onsubmit="return false;" role="search">
+        <select id="search-area" class="form-select me-2">
+          <option value="0" selected>place</option>
+        </select>
+        <select id="search-content-id" class="form-select me-2">
+          <option value="0" selected>type</option>
+          <option value="12">tourist attraction</option>
+          <option value="14">cultural facilities</option>
+          <option value="15">festivals</option>
+          <option value="25">course</option>
+          <option value="28">leisure</option>
+          <option value="32">residence</option>
+          <option value="38">shoppoing</option>
+          <option value="39">dining</option>
+        </select>
+        <input
+          id="search-keyword"
+          class="form-control me-2"
+          type="search"
+          placeholder="search-word"
+          aria-label="검색어"
+        />
+        <button id="btn-search" class="btn btn-outline-success" type="button">Search</button>
+      </form>
+
+      <!-- kakao map start -->
+      <!-- <div id="map" class="" style="margin:1rem; width: 80%; height: 600px"></div> -->
+      <div id="map" style="margin: 1rem auto; width: 80%; height: 600px"></div>
+
+      <!-- kakao map end -->
+
+      <div class="row mx-3" id="search-result">
+        <table class="table table-striped" style="visibility: hidden">
+          <thead>
+            <tr>
+              <th>대표이미지</th>
+              <th>관광지명</th>
+              <th>주소</th>
+              <th>위도</th>
+              <th>경도</th>
+            </tr>
+          </thead>
+          <tbody id="trip-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="untree_co-section mt-5">
+      <div class="container">
+        <div class="row text-center justify-content-center mb-5">
+          <div class="col-lg-7"><h2 class="section-title text-center">Popular Destination</h2></div>
+        </div>
+
+        <div class="owl-carousel owl-3-slider">
+          <div class="item">
+            <a class="media-thumb" href="images/hero-slider-1.jpg" data-fancybox="gallery">
+              <div class="media-text">
+                <h3>Seoul</h3>
+                <span class="location">Korea</span>
+              </div>
+              <img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid" />
+            </a>
+          </div>
+
+          <div class="item">
+            <a class="media-thumb" href="images/hero-slider-2.jpg" data-fancybox="gallery">
+              <div class="media-text">
+                <h3>Jeju island</h3>
+                <span class="location">Korea</span>
+              </div>
+              <img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid" />
+            </a>
+          </div>
+
+          <div class="item">
+            <a class="media-thumb" href="images/hero-slider-3.jpg" data-fancybox="gallery">
+              <div class="media-text">
+                <h3>Jeju island</h3>
+                <span class="location">Korea</span>
+              </div>
+              <img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="untree_co-section testimonial-section mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center">
+            <h2 class="section-title text-center mb-5">Testimonials</h2>
+
+            <div class="owl-single owl-carousel no-nav">
+              <div class="testimonial mx-auto">
+                <figure class="img-wrap">
+                  <img src="images/person_2.jpg" alt="Image" class="img-fluid" />
+                </figure>
+                <h3 class="name">Lin</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;There live the blind texts. Separated they live in Bookmarksgrove right
+                    at the coast of the Semantics, a large language ocean.&rdquo;
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="testimonial mx-auto">
+                <figure class="img-wrap">
+                  <img src="images/person_3.jpg" alt="Image" class="img-fluid" />
+                </figure>
+                <h3 class="name">Timothee Kim</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;There live the blind texts. Separated they live in Bookmarksgrove right
+                    at the coast of the Semantics, a large language ocean.&rdquo;
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5 cta-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2 class="mb-2 text-white">Lets you Explore the Best.</h2>
+            <p class="mb-0">
+              <a
+                href="booking.html"
+                class="btn btn-outline-white text-white btn-md font-weight-bold"
+                >Get in touch</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="inner first">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading">About Tour</h3>
+                <p>
+                  Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there live the blind texts.
+                </p>
+              </div>
+              <div class="widget">
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-dribbble"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-pinterest"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-apple"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-google"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 pl-lg-5">
+              <div class="widget">
+                <h3 class="heading">Pages</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="widget">
+                <h3 class="heading">Resources</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading">Contact</h3>
+                <ul class="list-unstyled quick-info links">
+                  <li class="email"><a href="#">mail@example.com</a></li>
+                  <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                  <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner dark">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All Rights Reserved. &mdash; Designed with love by
+                <a href="https://untree.co" class="link-highlight">Untree.co</a>
+                <!-- License information: https://untree.co/license/ -->Distributed By
+                <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+      $(function () {
+        var slides = $(".slides"),
+          images = slides.find("img");
+
+        images.each(function (i) {
+          $(this).attr("data-id", i + 1);
+        });
+
+        var typed = new Typed(".typed-words", {
+          strings: [" Seoul.", " Jeju Island.", " Gangneung.", " Daejeon.", " Busan."],
+          typeSpeed: 80,
+          backSpeed: 80,
+          backDelay: 4000,
+          startDelay: 1000,
+          loop: true,
+          showCursor: true,
+          preStringTyped: (arrayPos, self) => {
+            arrayPos++;
+            $(".slides img").removeClass("active");
+            $('.slides img[data-id="' + arrayPos + '"]').addClass("active");
+          },
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8a507ce88a7eb1ec1acf89c81bffcf42&libraries=services,clusterer,drawing"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
